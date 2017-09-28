@@ -42,7 +42,17 @@ int is_bit_set(unsigned char v, unsigned char i) {
   TODO your implementation goes here!
   */
 
-  return 0;
+  unsigned char mask = 1;
+  mask = mask << i;
+  if((mask & v) == mask)
+  {
+	  return 1;
+	  
+  }
+  else
+  {
+	  return 0;
+  }
 }
 
 /*
